@@ -32,7 +32,7 @@
         the music was soothing, and the atmosphere was truly relaxing. I will definitely bring friends along next time!
       </blockquote><br><br>
       <div class="tclone-stars">
-        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        <span>★</span><span>★</span><span>★</span><span class="tclone-star-empty">★</span><span class="tclone-star-empty">★</span>
       </div>
     </div>
 
@@ -40,8 +40,8 @@
 
   <!-- Navigation -->
   <div class="tclone-nav">
-    <a class="tclone-prev" href="#" role="button">Previous</a>
-    <a class="tclone-next" href="#" role="button">Next</a>
+    <a class="tclone-prev" href="#" role="button"><b>Previous</b></a>
+    <a class="tclone-next" href="#" role="button"><b>Next</b></a>
   </div>
 </div>
 
@@ -49,13 +49,15 @@
 /* ====== Scoped styles ====== */
 .tclone-wrap {
   position: relative;
-  padding: 120px 24px 84px;
-  min-height: 420px;
+  padding: 24px 24px 84px;
+  min-height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Paragraph' !important;
+  font-size: 17px;
+  font-weight: 100;
   overflow: hidden;
 }
 
@@ -79,7 +81,9 @@
 
 /* Stars */
 .tclone-stars {
-  font-size: 18px;
+   font-family: 'Paragraph' !important;
+  font-size: 17px;
+  font-weight: 100;
   margin: 0 auto 24px;
   letter-spacing: 2px;
 }
@@ -91,7 +95,9 @@
 
 /* Quote */
 .tclone-quote {
-  font-size: 20px;
+   font-family: 'Paragraph' !important;
+  font-size: 17px;
+  font-weight: 100;
   line-height: 1.75;
   color: #222;
   font-weight: 400;
@@ -115,12 +121,15 @@
 .tclone-nav a {
   color: #0b4da2;
   text-decoration: none;
+   font-family: 'Paragraph' !important;
+  font-size: 17px;
+  font-weight: 100;
 }
 .tclone-nav a:hover { opacity: .7; }
 
 /* Mobile */
 @media (max-width: 640px) {
-  .tclone-wrap { padding: 100px 18px 72px; min-height: 380px; }
+  .tclone-wrap { padding: 100px 18px 72px; min-height: 250px; }
   .tclone-quote { font-size: 18px; }
   .tclone-stars { font-size: 16px; margin-bottom: 20px; }
   .tclone-nav { bottom: 14px; padding: 0 18px; }
