@@ -1,14 +1,6 @@
 <!-- Testimonial Clone (conflict-safe) -->
 <div class="tclone-wrap" role="region" aria-label="Testimonial">
   <div class="tclone-inner">
-    <!-- Stars (top & centered) -->
-    <div class="tclone-stars" aria-label="4 out of 5 stars">
-      <span aria-hidden="true">★</span>
-      <span aria-hidden="true">★</span>
-      <span aria-hidden="true">★</span>
-      <span aria-hidden="true">★</span>
-      <span class="tclone-star-empty" aria-hidden="true">★</span>
-    </div>
 
     <!-- Centered quote -->
     <blockquote class="tclone-quote">
@@ -16,11 +8,18 @@
       Kennedy was amazing and I will definitely be back. Loved the ambience, very clean, good music,
       relaxing scents, and friendly staff.
     </blockquote>
-
+     <!-- Stars (top & centered) -->
+    <div class="tclone-stars" aria-label="4 out of 5 stars">
+      <span aria-hidden="true">★</span>
+      <span aria-hidden="true">★</span>
+      <span aria-hidden="true">★</span>
+      <span aria-hidden="true">★</span>
+      <span class="tclone-star-empty" aria-hidden="true">★</span>
+    </div>
     <!-- Bottom nav: corners, same row -->
     <div class="tclone-nav">
-      <a class="tclone-prev" href="#" role="button">Previous</a>
-      <a class="tclone-next" href="#" role="button">Next</a>
+      <a class="tclone-prev" href="#" role="button"><b>Previous</b></a>
+      <a class="tclone-next" href="#" role="button"><b>Next</b></a>
     </div>
   </div>
 </div>
@@ -30,7 +29,7 @@
 .tclone-wrap {
   position: relative;
   padding: 120px 24px 84px; /* generous whitespace like the reference */
-  min-height: 420px;       /* ensures room for top stars + centered text + bottom nav */
+  min-height: 200px;       /* ensures room for top stars + centered text + bottom nav */
   display: flex;
   align-items: center;     /* vertically centers the inner content area */
   justify-content: center;
@@ -60,11 +59,12 @@
 
 /* Quote text */
 .tclone-quote {
+  font-family: 'Paragraph' !important;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 300;
   line-height: 1.75;
   color: #222;
-  font-weight: 400;
 }
 
 /* Bottom nav — fixed to section corners on same row */
@@ -80,12 +80,14 @@
   pointer-events: none; /* container ignores clicks so only links are clickable */
 }
 
-.tclone-nav a {
+.tclone-nav a{
+  font-family: 'Paragraph' !important;
   pointer-events: auto;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 13px;
+  font-weight: 500;
   color: #0b4da2;          /* match blue tone from stars */
   transition: opacity .2s;
 }
