@@ -1,101 +1,124 @@
-<!-- Testimonial Clone (conflict-safe) -->
-<div class="tclone-wrap" role="region" aria-label="Testimonial">
-  <div class="tclone-inner">
+<!-- Testimonial Carousel (conflict-safe) -->
+<div class="tclone-wrap" role="region" aria-label="Testimonials">
+  <div class="tclone-slider">
 
-    <!-- Centered quote -->
-    <blockquote class="tclone-quote">
-      Best massage I've had! I never write reviews and felt the need to bc it was that enjoyable.
-      Kennedy was amazing and I will definitely be back. Loved the ambience, very clean, good music,
-      relaxing scents, and friendly staff.
-    </blockquote><br><br>
-     <!-- Stars (top & centered) -->
-    <div class="tclone-stars" aria-label="4 out of 5 stars">
-      <span aria-hidden="true">★</span>
-      <span aria-hidden="true">★</span>
-      <span aria-hidden="true">★</span>
-      <span aria-hidden="true">★</span>
-      <span class="tclone-star-empty" aria-hidden="true">★</span>
+    <!-- Testimonial 1 -->
+    <div class="tclone-slide active">
+      <div class="tclone-stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span class="tclone-star-empty">★</span>
+      </div>
+      <blockquote class="tclone-quote">
+        Best massage I've had! I never write reviews and felt the need to bc it was that enjoyable.
+        Kennedy was amazing and I will definitely be back. Loved the ambience, very clean, good music,
+        relaxing scents, and friendly staff.
+      </blockquote>
     </div>
-    <!-- Bottom nav: corners, same row -->
-    <div class="tclone-nav">
-      <a class="tclone-prev" href="#" role="button"><b>Previous</b></a>
-      <a class="tclone-next" href="#" role="button"><b>Next</b></a>
+
+    <!-- Testimonial 2 -->
+    <div class="tclone-slide">
+      <div class="tclone-stars">
+        <span>★</span><span>★</span><span>★</span><span class="tclone-star-empty">★</span><span class="tclone-star-empty">★</span>
+      </div>
+      <blockquote class="tclone-quote">
+        Wonderful service! The therapist listened carefully to what I needed and made sure I was comfortable
+        the entire session. The spa was clean, peaceful, and beautifully decorated. Highly recommended!
+      </blockquote>
     </div>
+
+    <!-- Testimonial 3 -->
+    <div class="tclone-slide">
+      <div class="tclone-stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+      <blockquote class="tclone-quote">
+        Absolutely the best experience I've ever had at a wellness center. The staff were attentive,
+        the music was soothing, and the atmosphere was truly relaxing. I will definitely bring friends along next time!
+      </blockquote>
+    </div>
+
+  </div>
+
+  <!-- Navigation -->
+  <div class="tclone-nav">
+    <a class="tclone-prev" href="#" role="button">Previous</a>
+    <a class="tclone-next" href="#" role="button">Next</a>
   </div>
 </div>
 
 <style>
-/* ====== Scoped styles (tclone- prefix avoids Squarespace conflicts) ====== */
+/* ====== Scoped styles ====== */
 .tclone-wrap {
   position: relative;
-  padding: 120px 24px 84px; /* generous whitespace like the reference */
-  min-height: 200px;       /* ensures room for top stars + centered text + bottom nav */
+  padding: 120px 24px 84px;
+  min-height: 420px;
   display: flex;
-  align-items: center;     /* vertically centers the inner content area */
+  align-items: center;
   justify-content: center;
   text-align: center;
   font-family: "Helvetica Neue", Arial, sans-serif;
+  overflow: hidden;
 }
 
-.tclone-inner {
-  max-width: 820px;
-  width: 100%;
+.tclone-slider {
+  display: flex;
+  width: 300%; /* 3 slides */
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
 }
 
-/* Stars — centered at the top */
+.tclone-slide {
+  min-width: 100%;
+  opacity: 0.2;
+  transition: opacity 0.6s ease;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.tclone-slide.active {
+  opacity: 1;
+}
+
+/* Stars */
 .tclone-stars {
   font-size: 18px;
-  line-height: 1;
   margin: 0 auto 24px;
-  letter-spacing: 2px;     /* visual spacing between stars like the screenshot */
+  letter-spacing: 2px;
 }
-
-/* Subtle blue→teal palette per star, last star lighter/empty */
-.tclone-stars span:nth-child(1) { color: #0b4da2; } /* deep blue */
+.tclone-stars span:nth-child(1) { color: #0b4da2; }
 .tclone-stars span:nth-child(2) { color: #1a64b6; }
 .tclone-stars span:nth-child(3) { color: #178fb9; }
 .tclone-stars span:nth-child(4) { color: #1eb5be; }
-.tclone-stars .tclone-star-empty { color: #9fd9dc; } /* pale teal for unfilled star */
+.tclone-stars .tclone-star-empty { color: #9fd9dc; }
 
-/* Quote text */
+/* Quote */
 .tclone-quote {
-  font-family: 'Paragraph' !important;
-  margin: 0 auto;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 20px;
   line-height: 1.75;
   color: #222;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 750px;
 }
 
-/* Bottom nav — fixed to section corners on same row */
+/* Nav */
 .tclone-nav {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 18px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 0 24px;
-  pointer-events: none; /* container ignores clicks so only links are clickable */
-}
-
-.tclone-nav a{
-  font-family: 'Paragraph' !important;
-  pointer-events: auto;
-  text-decoration: none;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 13px;
-  font-weight: 500;
-  color: #0b4da2;          /* match blue tone from stars */
-  transition: opacity .2s;
 }
+.tclone-nav a {
+  color: #0b4da2;
+  text-decoration: none;
+}
+.tclone-nav a:hover { opacity: .7; }
 
-.tclone-nav a:hover,
-.tclone-nav a:focus { opacity: .7; }
-
-/* Mobile adjustments */
+/* Mobile */
 @media (max-width: 640px) {
   .tclone-wrap { padding: 100px 18px 72px; min-height: 380px; }
   .tclone-quote { font-size: 18px; }
@@ -103,3 +126,35 @@
   .tclone-nav { bottom: 14px; padding: 0 18px; }
 }
 </style>
+
+<script>
+(function(){
+  const slider = document.querySelector('.tclone-slider');
+  const slides = document.querySelectorAll('.tclone-slide');
+  const prevBtn = document.querySelector('.tclone-prev');
+  const nextBtn = document.querySelector('.tclone-next');
+  let current = 0;
+
+  function showSlide(index) {
+    slider.style.transform = `translateX(-${index * 100}%)`;
+    slides.forEach((s, i) => {
+      s.classList.toggle('active', i === index);
+    });
+  }
+
+  prevBtn.addEventListener('click', e => {
+    e.preventDefault();
+    current = (current - 1 + slides.length) % slides.length;
+    showSlide(current);
+  });
+
+  nextBtn.addEventListener('click', e => {
+    e.preventDefault();
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  });
+
+  // init
+  showSlide(current);
+})();
+</script>
