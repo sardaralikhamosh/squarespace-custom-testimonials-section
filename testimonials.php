@@ -4,36 +4,36 @@
 
     <!-- Testimonial 1 -->
     <div class="tclone-slide active">
-      <div class="tclone-stars">
-        <span>★</span><span>★</span><span>★</span><span>★</span><span class="tclone-star-empty">★</span>
-      </div>
       <blockquote class="tclone-quote">
         Best massage I've had! I never write reviews and felt the need to bc it was that enjoyable.
         Kennedy was amazing and I will definitely be back. Loved the ambience, very clean, good music,
         relaxing scents, and friendly staff.
-      </blockquote>
+      </blockquote><br><br>
+      <div class="tclone-stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span class="tclone-star-empty">★</span>
+      </div>
     </div>
 
     <!-- Testimonial 2 -->
     <div class="tclone-slide">
-      <div class="tclone-stars">
-        <span>★</span><span>★</span><span>★</span><span class="tclone-star-empty">★</span><span class="tclone-star-empty">★</span>
-      </div>
       <blockquote class="tclone-quote">
         Wonderful service! The therapist listened carefully to what I needed and made sure I was comfortable
         the entire session. The spa was clean, peaceful, and beautifully decorated. Highly recommended!
-      </blockquote>
+      </blockquote><br><br>
+      <div class="tclone-stars">
+        <span>★</span><span>★</span><span>★</span><span class="tclone-star-empty">★</span><span class="tclone-star-empty">★</span>
+      </div>
     </div>
 
     <!-- Testimonial 3 -->
     <div class="tclone-slide">
-      <div class="tclone-stars">
-        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-      </div>
       <blockquote class="tclone-quote">
         Absolutely the best experience I've ever had at a wellness center. The staff were attentive,
         the music was soothing, and the atmosphere was truly relaxing. I will definitely bring friends along next time!
-      </blockquote>
+      </blockquote><br><br>
+      <div class="tclone-stars">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
     </div>
 
   </div>
