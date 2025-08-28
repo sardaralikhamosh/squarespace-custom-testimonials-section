@@ -7,7 +7,7 @@
       Best massage I've had! I never write reviews and felt the need to bc it was that enjoyable.
       Kennedy was amazing and I will definitely be back. Loved the ambience, very clean, good music,
       relaxing scents, and friendly staff.
-    </blockquote>
+    </blockquote><br><br>
      <!-- Stars (top & centered) -->
     <div class="tclone-stars" aria-label="4 out of 5 stars">
       <span aria-hidden="true">★</span>
