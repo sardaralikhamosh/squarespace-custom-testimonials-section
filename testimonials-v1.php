@@ -5,7 +5,8 @@
     <!-- Testimonial 1 -->
     <div class="tclone-slide active">
       <blockquote class="tclone-quote">
-        “This was hands down the best massage I have ever had. The therapist was professional, respectful, and incredibly strong. Once she realized I could handle it, she just did her magic. I left feeling like a new person, met with water and a business card I am practically ready to frame because I am never going anywhere else.”<br><br>
+        <p class="sqsrte-large preFade fadeIn" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.9s; transition-delay: 0.281416s;">
+        “This was hands down the best massage I have ever had. The therapist was professional, respectful, and incredibly strong. Once she realized I could handle it, she just did her magic. I left feeling like a new person, met with water and a business card I am practically ready to frame because I am never going anywhere else.”</p><br><br>
  —HANNAH S.
       </blockquote><br><br>
       <div class="tclone-stars">
@@ -16,8 +17,9 @@
     <!-- Testimonial 2 -->
     <div class="tclone-slide">
       <blockquote class="tclone-quote">
+        <p class="sqsrte-large preFade fadeIn" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.9s; transition-delay: 0.281416s;">
         “I cannot say enough wonderful things about my massage. I booked a deep tissue session and it broke a terrible migraine cycle with thoughtful attention to the tension in my neck and shoulders. The therapist was incredibly skilled and intuitive.
-I am used to sports massages or more casual Thai massages, so everything in the studio felt extra special. The soft sheets, the high quality massage oil, and even the music in the room made the experience feel elevated. The entire space is beautiful.”
+I am used to sports massages or more casual Thai massages, so everything in the studio felt extra special. The soft sheets, the high quality massage oil, and even the music in the room made the experience feel elevated. The entire space is beautiful.”</p>
 <br><br>—CARLY D.
       </blockquote><br><br>
       <div class="tclone-stars">
@@ -28,7 +30,8 @@ I am used to sports massages or more casual Thai massages, so everything in the 
     <!-- Testimonial 3 -->
     <div class="tclone-slide">
       <blockquote class="tclone-quote">
-        ”Arguably one of the best massages I have ever had. If you are looking for a strong deep tissue massage, this is the place. It was strong and precise, not just elbows sliding around, but hands that were able to identify those stubborn knots and precisely, and relentlessly, work them out.”
+        <p class="sqsrte-large preFade fadeIn" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.9s; transition-delay: 0.281416s;">
+        ”Arguably one of the best massages I have ever had. If you are looking for a strong deep tissue massage, this is the place. It was strong and precise, not just elbows sliding around, but hands that were able to identify those stubborn knots and precisely, and relentlessly, work them out.”</p>
 <br><br>—BILLY P.
       </blockquote><br><br>
       <div class="tclone-stars">
@@ -39,7 +42,8 @@ I am used to sports massages or more casual Thai massages, so everything in the 
     <!-- Testimonial 4 -->
     <div class="tclone-slide">
       <blockquote class="tclone-quote">
-        ”I came here for my first prenatal massage and booked with ALTH because of their special pillow that let me lie face down for part of the session. IT WAS THE BEST MASSAGE OF MY LIFE, and I have had plenty. Thai, Chinese, sports, deep tissue, Swedish you name it. Every bit of pressure and muscle work was so intentional. I cannot wait to book again.”
+        <p class="sqsrte-large preFade fadeIn" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.9s; transition-delay: 0.281416s;">
+        ”I came here for my first prenatal massage and booked with ALTH because of their special pillow that let me lie face down for part of the session. IT WAS THE BEST MASSAGE OF MY LIFE, and I have had plenty. Thai, Chinese, sports, deep tissue, Swedish you name it. Every bit of pressure and muscle work was so intentional. I cannot wait to book again.”</p>
 <br><br>—THUY A.
       </blockquote><br><br>
       <div class="tclone-stars">
@@ -50,7 +54,8 @@ I am used to sports massages or more casual Thai massages, so everything in the 
     <!-- Testimonial 5 -->
     <div class="tclone-slide">
       <blockquote class="tclone-quote">
-        ”My husband gifted me a 90 minute full body Swedish massage for our anniversary while we were vacationing in town, and it was truly the best massage I’ve ever had. The therapist was thorough, attentive, and a master at her craft. I left feeling like a new person, completely relaxed, especially after the flawless scalp massage. The back patio was also super cute, and I enjoyed reading my book there with a complimentary water and glass of champagne.”
+        <p class="sqsrte-large preFade fadeIn" style="white-space: pre-wrap; transition-timing-function: ease; transition-duration: 0.9s; transition-delay: 0.281416s;">
+        ”My husband gifted me a 90 minute full body Swedish massage for our anniversary while we were vacationing in town, and it was truly the best massage I’ve ever had. The therapist was thorough, attentive, and a master at her craft. I left feeling like a new person, completely relaxed, especially after the flawless scalp massage. The back patio was also super cute, and I enjoyed reading my book there with a complimentary water and glass of champagne.”</p>
 <br><br>—KAYLI B.
       </blockquote><br><br>
       <div class="tclone-stars">
@@ -71,7 +76,7 @@ I am used to sports massages or more casual Thai massages, so everything in the 
 /* ====== Scoped styles ====== */
 .tclone-wrap {
   position: relative;
-  padding: 24px 24px 84px;
+  padding: 100px 0 100px 0;
   min-height: 250px;
   display: flex;
   align-items: center;
@@ -85,7 +90,7 @@ I am used to sports massages or more casual Thai massages, so everything in the 
 
 .tclone-slider {
   display: flex;
-  width: 400%; /* 5 slides */
+  width: 100%; /* 5 slides */
   transform: translateX(0);
   transition: transform 0.6s ease-in-out;
 }
@@ -116,16 +121,7 @@ I am used to sports massages or more casual Thai massages, so everything in the 
 .tclone-stars .tclone-star-empty { color: #9fd9dc; }
 
 /* Quote */
-.tclone-quote {
-   font-family: 'Paragraph' !important;
-  font-size: 17px;
-  font-weight: 100;
-  line-height: 1.75;
-  color: #222;
-  font-weight: 400;
-  margin: 0 auto;
-  max-width: 750px;
-}
+
 
 /* Nav */
 .tclone-nav {
@@ -152,7 +148,7 @@ I am used to sports massages or more casual Thai massages, so everything in the 
 /* Mobile */
 @media (max-width: 640px) {
   .tclone-wrap { padding: 100px 18px 72px; min-height: 250px; }
-  .tclone-quote { font-size: 18px; }
+  
   .tclone-stars { font-size: 16px; margin-bottom: 20px; }
   .tclone-nav { bottom: 14px; padding: 0 18px; }
 }
