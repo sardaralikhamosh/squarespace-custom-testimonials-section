@@ -66,8 +66,8 @@
 
   <!-- Navigation -->
   <div class="tclone-nav">
-    <a class="tclone-prev" href="#" role="button"><b>Previous</b></a>
-    <a class="tclone-next" href="#" role="button"><b>Next</b></a>
+    <a class="tclone-prev botton-buttom-border" href="#" role="button">Previous</a>
+    <a class="tclone-next botton-buttom-border" href="#" role="button">Next</a>
   </div>
 </div>
 
@@ -76,7 +76,7 @@
 .botton-buttom-border{
   font-family: 'Archivo' !important;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 200;
 }
 .tclone-wrap {
   position: relative;
